@@ -2,6 +2,10 @@ const Joi = require('joi');
 const User = require('../models/user');
 const { successResponse, errorResponse } = require('../helpers/api_response');
 
+exports.getUsers = async (req, res) => {
+    return successResponse(res, 'All users', []);
+};
+
 exports.createUser = async (req, res) => {
     const userSchema = Joi.object({
         name: Joi.string().required(),
