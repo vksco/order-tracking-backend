@@ -1,0 +1,8 @@
+1) Create CRUD for Category
+    a) create category - done
+    b) get category by id
+    c) update category
+    d) delete category by id
+
+2) Create Product CRUD
+    a) add category_id column
